@@ -5,4 +5,7 @@ from django.views.generic import View
 
 
 class IndexView(View):
+  template_name = 'app/index.html'
   
+  def get(self, request, *args, **kwargs):
+    return render(request, 'app/index.html', )
