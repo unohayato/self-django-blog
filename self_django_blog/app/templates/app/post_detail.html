@@ -1,0 +1,11 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+
+  <h2>{{ object.title }}</h2>
+  <p><time>{{ object.created_at}}</time></p>
+  <div>
+    {{ object.content }}
+  </div>
+
+{% endblock content %}
